@@ -1,0 +1,62 @@
+:root {
+	--color-primary: #7e57e2;
+	--color-secondary: #60de55;
+	--color-accent: #f02c35;
+	--color-dark: #000;
+	--color-light: #fff;
+}
+
+/* Roboto font family */
+@font-face {
+	font-family: 'Roboto';
+	src: url('./fonts/Roboto-Regular.ttf') format('truetype');
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: 'Roboto';
+	src: url('./fonts/Roboto-Bold.ttf') format('truetype');
+	font-weight: bold;
+}
+
+/* Ubuntu Mono font family */
+@font-face {
+	font-family: 'Ubuntu Mono';
+	src: url('./fonts/UbuntuMono-Regular.ttf') format('truetype');
+	font-weight: normal;
+}
+
+/* Russo One font family */
+@font-face {
+	font-family: 'Russo One';
+	src: url('./fonts/RussoOne-Regular.ttf') format('truetype');
+	font-weight: normal;
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+}
+
+#assignment-instructions {
+	font-family: 'Russo One', sans-serif;
+	color: var(--color-primary);
+}
+
+code {
+	font-family: 'Ubuntu Mono', monospace;
+	color: var(--color-accent);
+}
+
+ol > li:nth-child(2) code {
+	color: var(--color-secondary);
+}
+
+li:not(:first-child) {
+	background-color: var(--color-dark);
+	color: var(--color-light);
+}
+
+ol li {
+	background-color: var(--color-dark);
+	color: var(--color-light);
+}

@@ -1,0 +1,28 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.box {
+	padding: 10px 20px 30px 40px;
+	margin: 40px 30px 20px 10px;
+	border: 2px solid #000;
+	display: inline-block;
+}
+
+.box-1 {
+	height: 300px;
+	width: 50%;
+}
+
+.box-2 {
+	height: 300px;
+}
+
+.box-2:hover {
+	border-color: blueviolet;
+	color: blueviolet;
+}
