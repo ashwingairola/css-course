@@ -11,19 +11,24 @@ const closeModal = () => {
 	// modal.style.display = 'none';
 	// backdrop.style.display = 'none';
 
-	modal.classList.remove('open');
+	if (modal) {
+		modal.classList.remove('open');
+	}
+
 	backdrop.classList.remove('open');
 };
 
-selectPlanButtons.forEach((button) => {
-	button.addEventListener('click', () => {
-		// backdrop.style.display = 'block';
-		// modal.style.display = 'block';
+if (selectPlanButtons) {
+	selectPlanButtons.forEach((button) => {
+		button.addEventListener('click', () => {
+			// backdrop.style.display = 'block';
+			// modal.style.display = 'block';
 
-		modal.classList.add('open');
-		backdrop.classList.add('open');
+			modal.classList.add('open');
+			backdrop.classList.add('open');
+		});
 	});
-});
+}
 
 backdrop.addEventListener('click', () => {
 	// mobileNav.style.display = 'none';
@@ -32,7 +37,9 @@ backdrop.addEventListener('click', () => {
 	closeModal();
 });
 
-modalNoButton.addEventListener('click', closeModal);
+if (modalNoButton) {
+	modalNoButton.addEventListener('click', closeModal);
+}
 
 toggleButton.addEventListener('click', () => {
 	// mobileNav.style.display = 'block';
