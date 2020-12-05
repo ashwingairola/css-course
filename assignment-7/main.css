@@ -1,0 +1,33 @@
+.container {
+	display: grid;
+	grid-template-columns: repeat(10, calc(10% - 5px));
+	grid-template-rows: 64px 500px 128px;
+	column-gap: 5px;
+	row-gap: 5px;
+}
+
+.header {
+	background-color: #b000b5;
+}
+
+.footer {
+	background-color: #d11d05;
+}
+
+.header,
+.footer {
+	grid-column-start: 1;
+	grid-column-end: -1;
+}
+
+.sidebar {
+	background-color: #fb1;
+	grid-column-start: 1;
+	grid-column-end: 3;
+}
+
+.main {
+	background-color: #bada55;
+	grid-column-start: 3;
+	grid-column-end: -1;
+}
