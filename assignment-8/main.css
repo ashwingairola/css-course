@@ -1,0 +1,31 @@
+.container {
+	display: grid;
+	grid-template-columns: repeat(10, calc(10% - 5px));
+	grid-template-rows: 64px 500px 128px;
+	grid-template-areas:
+		'header header header header header header header header header header'
+		'sidebar sidebar main main main main main main main main'
+		'footer footer footer footer footer footer footer footer footer footer';
+	column-gap: 5px;
+	row-gap: 5px;
+}
+
+.header {
+	background-color: #b000b5;
+	grid-area: header;
+}
+
+.footer {
+	background-color: #d11d05;
+	grid-area: footer;
+}
+
+.sidebar {
+	background-color: #fb1;
+	grid-area: sidebar;
+}
+
+.main {
+	background-color: #bada55;
+	grid-area: main;
+}
